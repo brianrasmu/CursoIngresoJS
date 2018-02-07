@@ -14,7 +14,11 @@ function Sumar ()
 	precioDos=document.getElementById('PrecioDos').value;
 	precioTres=document.getElementById('PrecioTres').value;
 
-	resultado=parseInt(precioUno)+parseInt(precioDos)+parseInt(precioTres);
+	precioUno=parseInt(precioUno);
+	precioDos=parseInt(precioDos);
+	precioTres=parseInt(precioTres);
+
+	resultado=precioUno+precioDos+precioTres;
 
 	alert(resultado);
 }
@@ -29,7 +33,11 @@ function Promedio ()
 	precioDos=document.getElementById('PrecioDos').value;
 	precioTres=document.getElementById('PrecioTres').value;
 
-	resultado=(parseInt(precioUno)+parseInt(precioDos)+parseInt(precioTres))/3;
+	precioUno=parseInt(precioUno);
+	precioDos=parseInt(precioDos);
+	precioTres=parseInt(precioTres);
+
+	resultado=(precioUno+precioDos+precioTres)/3;
 
 	alert(resultado);
 }
@@ -44,8 +52,11 @@ function PrecioFinal ()
 	precioDos=document.getElementById('PrecioDos').value;
 	precioTres=document.getElementById('PrecioTres').value;
 
-	resultado=(parseInt(precioUno)+parseInt(precioDos)+parseInt(precioTres))*1.21;
+	precioUno=parseInt(precioUno);
+	precioDos=parseInt(precioDos);
+	precioTres=parseInt(precioTres);
 
+	resultado=(precioUno+precioDos+precioTres)*1.21;
 
 	alert(resultado);
 }

@@ -13,7 +13,10 @@ function Rectangulo ()
 	largo=document.getElementById('Largo').value;
 	ancho=document.getElementById('Ancho').value;
 
-	resultado=(parseInt(largo)+parseInt(ancho))*3;
+	largo=parseInt(largo);
+	ancho=parseInt(ancho);
+
+	resultado=(largo+ancho)*3;
 
 	alert("Se necesitan "+resultado+ " metros de alambre.");
 
@@ -26,7 +29,9 @@ function Circulo ()
 
 	radio=document.getElementById('Radio').value;
 
-	perimetro=2*3.14*parseInt(radio);
+	radio=parseInt(radio);
+
+	perimetro=2*3.14*radio;
 
 	resultado=perimetro*3;
 
@@ -42,8 +47,11 @@ function Materiales ()
 	largo=document.getElementById('Largo').value;
 	ancho=document.getElementById('Ancho').value;
 
-	cemento=(parseInt(largo)*parseInt(ancho))*2;
-	cal=(parseInt(largo)*parseInt(ancho))*3;
+	largo=parseInt(largo);
+	ancho=parseInt(ancho);
+
+	cemento=(largo*ancho)*2;
+	cal=(largo*ancho)*3;
 
 	alert("Se necesitan "+cemento+" bolsas de cemento y "+cal+ " bolsas de cal.");
 }
