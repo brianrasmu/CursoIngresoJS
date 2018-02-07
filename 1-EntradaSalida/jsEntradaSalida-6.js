@@ -3,14 +3,17 @@ transformarlos a enteros (parseInt) y Sumarlos.
 Mostar el resulto por medio de "ALERT"*/
 function sumar()
 {
-	var uno;
-	var dos;
+	var numeroUno;
+	var numeroDos;
 	var resultado;
 
-	uno=document.getElementById('numeroUno').value;
-	dos=document.getElementById('numeroDos').value;
+	numeroUno=document.getElementById('numeroUno').value;
+	numeroDos=document.getElementById('numeroDos').value;
 
-	resultado=parseInt(uno)+parseInt(dos);
+	numeroUno=parseInt(numeroUno);
+	numeroDos=parseInt(numeroDos);
+
+	resultado=numeroUno+numeroDos;
 
 	alert(resultado);
 }

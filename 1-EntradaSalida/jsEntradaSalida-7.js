@@ -4,56 +4,59 @@ mostar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-	var uno;
-	var dos;
+	var numeroUno;
+	var numeroDos;
 	var resultado;
 
-	uno=document.getElementById('numeroUno').value;
-	dos=document.getElementById('numeroDos').value;
+	numeroUno=document.getElementById('numeroUno').value;
+	numeroDos=document.getElementById('numeroDos').value;
 
-	resultado=parseInt(uno)+parseInt(dos);
+	numeroUno=parseInt(numeroUno);
+	numeroDos=parseInt(numeroDos);
+
+	resultado=numeroUno+numeroDos;
 
 	alert("la Suma es "+resultado);
 }
 
 function restar()
 {
-	var uno;
-	var dos;
+	var numeroUno;
+	var numeroDos;
 	var resultado;
 
-	uno=document.getElementById('numeroUno').value;
-	dos=document.getElementById('numeroDos').value;
+	numeroUno=document.getElementById('numeroUno').value;
+	numeroDos=document.getElementById('numeroDos').value;
 
-	resultado=parseInt(uno)-parseInt(dos);
+	resultado=numeroUno-numeroDos;
 
 	alert("la Resta es "+resultado);
 }
 
 function multiplicar()
 { 
-	var uno;
-	var dos;
+	var numeroUno;
+	var numeroDos;
 	var resultado;
 
-	uno=document.getElementById('numeroUno').value;
-	dos=document.getElementById('numeroDos').value;
+	numeroUno=document.getElementById('numeroUno').value;
+	numeroDos=document.getElementById('numeroDos').value;
 
-	resultado=parseInt(uno)*parseInt(dos);
+	resultado=numeroUno*numeroDos;
 
 	alert("la Multiplicacion es "+resultado);
 }
 
 function dividir()
 {
-	var uno;
-	var dos;
+	var numeroUno;
+	var numeroDos;
 	var resultado;
 
-	uno=document.getElementById('numeroUno').value;
-	dos=document.getElementById('numeroDos').value;
+	numeroUno=document.getElementById('numeroUno').value;
+	numeroDos=document.getElementById('numeroDos').value;
 
-	resultado=parseInt(uno)/parseInt(dos);
+	resultado=numeroUno/numeroDos;
 
 	alert("la Division es "+resultado);
 }
